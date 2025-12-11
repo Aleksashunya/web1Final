@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interestellar</title>
+    <link rel="stylesheet" href="./estilos/general.css">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="stylesheet" href="./estilos/elementos.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./imagines/favicon.png">
+    <link rel="apple-touch-icon" href="./imagines/favicon.png">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        <img src="./imagines/logo.png" alt="Logo">
+        <ul>
+            <li><a href="./contenido/resumen.html" target="content">Inicio</a></li>
+            <li><a href="./contenido/about.html" target="content">Sobre la película</a></li>
+            <li><a href="./contenido/actors.html" target="content">Reparto</a></li>
+            <li><a href="./contenido/production.html" target="content">Producción</a></li>
+            <li><a href="./contenido/premios.html" target="content">Curiosidades y Premios</a></li>
+            <li><a href="./contenido/contacto.html" target="content">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <h1>Interstellar</h1>
+        <p><em><q>La humanidad nació en la Tierra, pero no está destinada a morir aquí</q></em></p>
+    </header>
+    
+    <main>
+        <iframe name="content" src="./contenido/resumen.html"></iframe>
+
+        <!-- Aside -->
+        <aside>
+            <h3>Información básica</h3>
+
+            <section>
+                <p><strong>Dirección</strong><br>Christopher Nolan</p>
+                <hr>
+                <p><strong>Producción</strong><br>Emma Thomas, Christopher Nolan, Lynda Obst</p>
+                <hr>
+                <p><strong>Guion</strong><br>Jonathan Nolan, Christopher Nolan</p>
+                <hr>
+                <p><strong>País</strong><br>Estados Unidos, Reino Unido, Canadá</p>
+                <hr>
+                <p><strong>Año</strong><br>2014</p>
+                <hr>
+                <p><strong>Género</strong><br>Ciencia ficción, Ciencia ficción apocalíptica, Drama, Distopía, Space opera, Épica</p>
+                <hr>
+                <p><strong>Duración</strong><br>169 minutos</p>
+            </section>
+
+            <img src="./imagines/poster.webp" alt="Póster imagen">
+        </aside>
+
+        <!-- Message block -->
+        <div id="mensaje">
+            <form action="./contenido/confirmacion.html" target="content" method="get">
+                <fieldset>
+                    <legend><h3>Póngase en contacto con el Servicio al cliente</h3></legend>
+                    <textarea name="Mensaje" id="user_mensaje" placeholder="Suggestions and comments"></textarea>
+                    <br>
+                    <button type="submit" class="submitButton">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+
+        <a href="#mensaje" id="abrir">
+            <img id="comunicacion" src="./imagines/comunicacion.png" alt="Comunicacion imagen">
+        </a>
+        <a href=# id="cerrar">
+            <img id="comunicacionMini" src="./imagines/comunicacionCerrar.png" alt="Comunicacion imagen">
+        </a>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <img src="./imagines/logo.png" alt="Logo">
+        <p>&copy; 2025 Melnikova Aleksandra. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

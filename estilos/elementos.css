@@ -1,0 +1,23 @@
+.linkButton {
+    text-decoration: none;
+    background-color: #182526;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    transition: padding 0.2s linear;
+}
+
+
+.linkButton:hover {
+    padding: 10px;
+    transition: padding 0.2s linear;
+}
+
+.submitButton {
+    height: 30px;
+    width: 100%;
+    background-color: #182526;
+    color: white;
+    font-weight: bold;
+    font-size: small;
+}

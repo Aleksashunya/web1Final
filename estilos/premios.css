@@ -1,0 +1,11 @@
+.verde {
+    color: #49bd3a;
+    font-weight: bold;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+    float: left;
+    padding: 20px;
+}

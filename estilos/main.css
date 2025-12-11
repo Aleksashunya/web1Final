@@ -1,0 +1,149 @@
+header {
+    color: #DCF0F2;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+    background-image: url(../imagines/headerWaves.jpeg);
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    height: 200px;
+    align-content: center;
+}
+
+nav {
+    background: #182526;
+    color: #fff;
+    text-align: center;
+    display: inline;
+    position: sticky;
+    top: 0%;
+    
+    ul {
+        margin: 0;
+    }
+
+    ul li {
+        display: inline;
+        margin-right: 30px;
+    }
+    
+    ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    img {
+        float: left;
+        height: 25px;
+    }
+}
+
+main {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+}
+
+nav, main, footer {
+    padding: 20px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+aside {
+    flex: 1;
+    background: #182526;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+
+    section {
+        text-align: left;
+    }
+
+    img {
+        height: 300px;
+    }
+}
+
+footer {
+    background: #182526;
+    color: #fff;
+    text-align: center;
+
+    img {
+        float: left;
+        height: 25px;
+    }
+}
+
+iframe {
+    width: 80%;
+    border: 0px;
+}
+
+#comunicacion {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 80px;
+    transition: height 0.5s linear;
+}
+
+#comunicacionMini {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 50px;
+}
+
+#mensaje {
+    height: fit-content;
+    width: 400px;
+    position: fixed;
+    bottom: 12%;
+    right: -1000px;
+    background-color: #DCF0F2;
+    border-radius: 10px;
+    padding: 20px;
+    border-color: #72858C;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 2px 2px 2px #72858C;
+    transition: right 0.8s linear;
+
+    textarea {
+        width: 350px;
+        max-width: 350px;
+        min-width: 350px;
+        height: 50px;
+        max-height: 200px;
+        min-height: 50px;
+    }
+}
+
+#mensaje:target ~ #abrir {
+    display: none;
+}
+
+#mensaje:target ~ #cerrar {
+    display: inline-block;
+}
+
+#mensaje:target {
+    right: 1%;
+    transition: right 0.8s linear;
+}
+
+#cerrar {
+    display: none;
+}
+
+#comunicacion:hover {
+    height: 85px;
+    transition: height 0.5s linear;
+}
