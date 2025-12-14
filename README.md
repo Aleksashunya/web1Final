@@ -3,21 +3,15 @@
 Proyecto para la materia **Programación Web I**
 
 ---
+## ✅ Mejoras realizadas (vs Parcial 2)
 
-## 🪐 Cambios del Parcial 2
+### 1) 📱💻 Sitio adaptado (Responsive)
+- El sitio fue optimizado para **pantallas grandes y pequeñas** (desktop / tablet / mobile).
+- Se ajustaron tamaños de texto, imágenes y espaciados para mejorar la lectura y la navegación.
 
-- Nuevo diseño del **header** con uso de `background-image`
-- **NavigationBar** con `position: sticky`
-- Nuevo diseño en la página principal (`resumen.html`) con uso de `display: grid`
-- Uso de **video de YouTube** en la página principal  
-- Uso de **audio de archivos locales** en la página principal  
-- Inclusión de una **imagen GIF** en la página principal  
-- Ícono de **retroalimentación** con `position: fixed`
-- Vista emergente con **textView** para enviar retroalimentación
-- Nuevo diseño en la página de **Personajes** (`actors.html`) con uso de `display: inline-flex`
-- Animación **hover** en las secciones de `actors.html`
-- Agregado de **formularios** en la página de contacto, con validación de campos de texto
-- Página de **éxito** al enviar los datos del formulario
-- Página de **error 404** con diseño personalizado
-- **Favicon** agregado al sitio web
-- Logica de hidden puntos en en la página de contacto con script
+### 2) 🧭 Navbar actualizado
+- Se modificó el **navigation bar** para mejorar la estructura y la experiencia de navegación.
+- Se adaptó su comportamiento para mobile (por ejemplo, menú colapsable y mejor distribución).
+
+### 3) 🎞️ Carrusel en la página principal (Bootstrap)
+- Se agregó un **Carousel** en la página de inicio para practicar componentes de **Bootstrap**.
