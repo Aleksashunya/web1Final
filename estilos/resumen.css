@@ -9,18 +9,21 @@ img {
 }
 
 #cajaGrilla {
+    background: #DCF0F2;
     font-size: 15px;
     padding-right: 20px;
+    padding-left: 20px;
     gap: 10px;
     height: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "resumen    resumen vision  vision"
-    "publico    publico legado  legado"
-    "frases     frases  legado  legado"
-    "trailer    trailer musica  musica";
+    "resumen    resumen     vision              vision"
+    "publico    publico     legado              legado"
+    "frases     frases      legado              legado"
+    "trailer    trailer     musica              musica"
+    "imagines   imagines    imaginesProduccion  imaginesProduccion";
 }
 
 ul {
@@ -97,10 +100,6 @@ section {
     grid-area: musica;
     padding: 0px;
 
-    p {
-        padding: 20px;
-    }
-
     .imagine {
         background-color: black;
         float: right;
@@ -114,16 +113,51 @@ section {
     }
 }
 
+#imagines {
+    background-color: #475459;
+    color: white;
+    text-align: center;
+    grid-area: imagines;
+
+    #carousel {
+        height: 88%;
+        aspect-ratio: 16 / 9;
+    }
+
+    img {
+        height: 85%;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+#imaginesProduccion {
+    background-color: #A8BBBF;
+    text-align: center;
+    grid-area: imaginesProduccion;
+
+    #carousel {
+        height: 85%;
+        aspect-ratio: 16 / 9;
+    }
+
+    img {
+        height: 85%;
+        aspect-ratio: 16 / 9;
+    }
+}
+
 @media (width < 1100px) {
     #cajaGrilla {
         display: inline;
         font-size: 14px;
+        padding: 0px;
     }
 
     #musica {
         .imagine {
             width: 100%;
             height: 20%;
+            margin-bottom: 20px;
         }
 
         .audio-wrapper audio {
