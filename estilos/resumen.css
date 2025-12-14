@@ -67,6 +67,10 @@ section {
     align-content: start;
     padding-top: 0px;
     grid-area: legado;
+
+    img {
+        height: 200px;
+    }
 }
 
 #frases {
