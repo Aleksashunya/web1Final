@@ -38,12 +38,12 @@ section {
     grid-area: resumen;
 
     img {
-       float: left;
-       padding: 10px;
+        float: left;
+        padding: 10px;
     }
 
     h3 {
-      text-align: center;  
+        text-align: center;  
     }
 }
 
@@ -97,10 +97,56 @@ section {
         padding: 20px;
     }
 
-    div {
+    .imagine {
         background-color: black;
         float: right;
         height: 100%;
         align-content: center;
+    }
+
+    .audio-wrapper audio {
+        width: 200px;
+        height: 30px;
+    }
+}
+
+@media (width < 1100px) {
+    #cajaGrilla {
+        display: inline;
+        font-size: 14px;
+    }
+
+    #musica {
+        .imagine {
+            width: 100%;
+            height: 20%;
+        }
+
+        .audio-wrapper audio {
+            width: 70%;
+            min-width: 200px;
+            height: 30px;
+        }
+    }
+    
+    * {
+        overflow: visible;
+    }
+
+    img {
+        height: 250px;
+        width: auto;
+    }
+
+    #resumen {
+        text-align: center;
+
+        img {
+            float: none;
+        }
+    }
+
+    #vision {
+        overflow: visible;
     }
 }

@@ -9,18 +9,59 @@
     <link rel="stylesheet" href="./estilos/elementos.css">
     <link rel="icon" type="image/png" sizes="32x32" href="./imagines/favicon.png">
     <link rel="apple-touch-icon" href="./imagines/favicon.png">
+    <script src='./scriptos/script.js'></script>
 </head>
 <body>
     <!-- Navigation bar -->
     <nav>
-        <img src="./imagines/logo.png" alt="Logo">
-        <ul>
-            <li><a href="./contenido/resumen.html" target="content">Inicio</a></li>
-            <li><a href="./contenido/about.html" target="content">Sobre la película</a></li>
-            <li><a href="./contenido/actors.html" target="content">Reparto</a></li>
-            <li><a href="./contenido/production.html" target="content">Producción</a></li>
-            <li><a href="./contenido/premios.html" target="content">Curiosidades y Premios</a></li>
-            <li><a href="./contenido/contacto.html" target="content">Contacto</a></li>
+        <img class="logo-icon" src="./imagines/logo.png" alt="Logo">
+
+        <div class="nav-toggle" onclick='mostrarMenu()' id="mostrarMenuButton">
+            <img src="./imagines/Menu.png" alt="Menu">
+        </div>
+        
+        <ul class="nav-menu">
+            <li>
+                <a href="./contenido/resumen.html" target="content">
+                    <span class="nav-icon"><img src="./imagines/Home.png" alt="Home"></span>
+                    <span class="nav-text">Inicio</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="./contenido/about.html" target="content">
+                    <span class="nav-icon"><img src="./imagines/Information.png" alt="Information"></span>
+                    <span class="nav-text">Sobre la película</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="./contenido/actors.html" target="content">
+                    <span class="nav-icon"><img src="./imagines/Users.png" alt="Reparto"></span>
+                    <span class="nav-text">Reparto</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="./contenido/production.html" target="content">
+                    <span class="nav-icon"><img src="./imagines/Magic.png" alt="Produccion"></span>
+                    <span class="nav-text">Producción</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="./contenido/premios.html" target="content">
+                    <span class="nav-icon"><img src="./imagines/Oscars.png" alt="Premios"></span>
+                    <span class="nav-text">Curiosidades y Premios</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="./contenido/contacto.html" target="content">
+                    <span class="nav-icon"><img src="./imagines/Mail.png" alt="Contacto"></span>
+                    <span class="nav-text">Contacto</span>
+                </a>
+            </li>
         </ul>
     </nav>
 

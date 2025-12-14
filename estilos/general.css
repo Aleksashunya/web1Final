@@ -23,6 +23,16 @@ h3 {
     font-size: 20px;
 }
 
+@media (width < 600px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
+
 /* Los colores del sitio
 - #182526 - Más oscuro. Color de nav, footer, aside. 
 - #DCF0F2 - Más claro. Color de body.

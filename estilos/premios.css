@@ -9,3 +9,16 @@ img {
     float: left;
     padding: 20px;
 }
+
+@media (width < 600px) {
+    img {
+        width: 90%;
+        height: auto;
+        float: none;
+        padding: 20px;
+    }
+
+    main {
+        margin: 20px;
+    }
+}

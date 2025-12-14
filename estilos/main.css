@@ -9,6 +9,7 @@ header {
     background-attachment: scroll;
     height: 200px;
     align-content: center;
+    padding: 20px;
 }
 
 nav {
@@ -146,4 +147,110 @@ iframe {
 #comunicacion:hover {
     height: 85px;
     transition: height 0.5s linear;
+}
+
+.nav-icon, .nav-toggle {
+    display: none;
+}
+
+@media (width < 1300px) {
+    body {
+        min-height: 200vh;
+    }
+    
+    aside {
+        display: none;
+        width: 0px;
+    }
+    
+    iframe { 
+        width: 100%;
+        height: auto;
+    }
+
+    header {
+        font-size: 15px;
+        height: 150px;
+    }
+
+    nav {
+        position: relative;
+        top: auto;
+    }
+
+    footer {
+        img {
+            float: none;
+        }
+    }
+}
+
+@media (width < 600px) {
+    main {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #mensaje {
+        width: 80%;
+        textarea {
+            width: 100%;
+            max-width: 100%;
+            min-width: 100%;
+        }
+    }
+
+    #comunicacion {
+        height: 50px;
+    }
+}
+
+@media (width < 810px) {
+    .nav-text {
+        display: none;
+    }
+
+    .nav-icon {
+        display: inline-block;
+    }
+}
+
+@media (width < 1010px) {
+    nav {
+        .logo-icon {
+            display: none;
+        }
+    }
+}
+
+@media (width < 440px) {
+    .nav-toggle {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav img {
+        float: none;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0px;
+
+        img {
+            height: 30px;
+        }
+
+        padding-top: 20px;
+
+        li {
+            margin-right: 0px;
+            padding-bottom: 20px;
+        }
+    }
 }

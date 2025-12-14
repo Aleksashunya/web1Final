@@ -10,3 +10,7 @@ function mostrarMas() {
         button.innerText = "Mostrar Más";
     }
 }
+
+function mostrarMenu() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+}
